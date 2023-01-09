@@ -1,0 +1,44 @@
+.buttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  width: 300px;
+  transition: 0.3s ease-in;
+}
+
+.buttons {
+box-sizing: border-box;;
+  width: 327px;
+  height: 420px;
+  background-color: $keypad1;
+  border-radius: 10px;
+  margin-top: 24px;
+  padding: 24px;
+  display: flex;
+  &__number {
+    @include button;
+  }
+  &__operator {
+    @include button;
+  }
+  &__del {
+    @include button;
+    @include delbutton;
+  }
+  &__reset{
+    @include button;
+    @include delbutton;
+    width: 133px;
+    height: 64px;
+  }
+  &__equal {
+    @include button;
+    @include delbutton;
+    width: 133px;
+    height: 64px;
+    background-color: $equalkeybackground1;
+    -webkit-box-shadow: 0px 4px 0px 0px $equalkeyshadow1;
+    -moz-box-shadow: 0px 4px 0px 0px $equalkeyshadow1;
+    box-shadow: 0px 4px 0px 0px $equalkeyshadow1;
+  }
+}

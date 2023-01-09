@@ -1,0 +1,88 @@
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices - tablets
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+@mixin button {
+  transition: 0.2s linear;
+  border: none;
+  border-radius: 5px;
+  height: 60px;
+  width: 60px;
+  font-family: $font;
+  font-size: 32px;
+  color: $text1;
+  background-color: $keybackground1;
+  line-height: 64px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 4px 0px 0px $keyshadow1;
+  -moz-box-shadow: 0px 4px 0px 0px $keyshadow1;
+  box-shadow: 0px 4px 0px 0px $keyshadow1;
+}
+
+@mixin delbutton {
+  background-color: $resetkeybackground1;
+  color: $white1;
+  font-size: 20px;
+  letter-spacing: -0.33px;
+  -webkit-box-shadow: 0px 4px 0px 0px $resetkeyshadow1;
+  -moz-box-shadow: 0px 4px 0px 0px $resetkeyshadow1;
+  box-shadow: 0px 4px 0px 0px $resetkeyshadow1;
+}
+
+@mixin triswitch {
+  .theme-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .custom-radio-button {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #444;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &input {
+      display: none;
+    }
+  }
+  .custom-radio-button .checkmark {
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    background-color: hsl(6, 63%, 50%);
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .custom-radio-button input:checked + .checkmark {
+    opacity: 1;
+    display: inline-block;
+  }
+}

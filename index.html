@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" async></script>
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <div class="calculator-wrapper">
+      <header class="header">
+        <p class="header__logo">calc</p>
+        <div class="header__themechanger">
+          <p class="header__title">THEME</p>
+          <div class="toggle-wrapper">
+            <p class="header__theme-numbers">123</p>
+            <div class="theme-toggle">
+              <label class="custom-radio-button">
+                <input id="first" name="toggle-state" type="radio" checked />
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="custom-radio-button">
+                <input id="second" name="toggle-state" type="radio" />
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="custom-radio-button">
+                <input id="third" name="toggle-state" type="radio" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="screen">
+        <div class="result-wrapper">
+          <p class="screen__previous"></p>
+          <p class="screen__sign"></p>
+          <p class="screen__result"></p>
+        </div>
+      </section>
+      <section class="buttons">
+        <div class="buttons-wrapper">
+          <button class="buttons__number">7</button>
+          <button class="buttons__number">8</button>
+          <button class="buttons__number">9</button>
+          <button class="buttons__del">DEL</button>
+          <button class="buttons__number">4</button>
+          <button class="buttons__number">5</button>
+          <button class="buttons__number">6</button>
+          <button class="buttons__operator">+</button>
+          <button class="buttons__number">1</button>
+          <button class="buttons__number">2</button>
+          <button class="buttons__number">3</button>
+          <button class="buttons__operator">-</button>
+          <button class="buttons__number">.</button>
+          <button class="buttons__number">0</button>
+          <button class="buttons__operator">/</button>
+          <button class="buttons__operator">x</button>
+          <button class="buttons__reset">RESET</button>
+          <button class="buttons__equal">=</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

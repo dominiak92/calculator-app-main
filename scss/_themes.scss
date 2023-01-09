@@ -1,0 +1,147 @@
+@mixin second {
+  body.first {
+    transition: 0.3s linear;
+    background-color: $background2;
+    .calculator-wrapper {
+      .header {
+        &__logo {
+          color: $text2;
+        }
+        &__title {
+          color: $text2;
+        }
+        &__theme-numbers {
+          color: $text2;
+        }
+      }
+      .theme-toggle {
+        background-color: hsla(0, 5%, 81%, 1);
+      }
+      .custom-radio-button {
+        .checkmark {
+          background-color: hsla(25, 98%, 40%, 1);
+        }
+      }
+      .screen {
+        background-color: $screen2;
+        &__result {
+          color: $text2;
+        }
+        &__previous {
+          color: lighten($text2, 35%);
+        }
+        &__sign {
+          color: lighten($text2, 35%);
+        }
+      }
+      .buttons {
+        background-color: $keypad2;
+        &__number {
+          color: $text2;
+          -webkit-box-shadow: 0px 4px 0px 0px $keyshadow2;
+          -moz-box-shadow: 0px 4px 0px 0px $keyshadow2;
+          box-shadow: 0px 4px 0px 0px $keyshadow2;
+        }
+        &__operator {
+          color: $text2;
+          -webkit-box-shadow: 0px 4px 0px 0px $keyshadow2;
+          -moz-box-shadow: 0px 4px 0px 0px $keyshadow2;
+          box-shadow: 0px 4px 0px 0px $keyshadow2;
+        }
+        &__del {
+          background-color: $resetkeybackground2;
+          -webkit-box-shadow: 0px 4px 0px 0px $resetkeyshadow2;
+          -moz-box-shadow: 0px 4px 0px 0px $resetkeyshadow2;
+          box-shadow: 0px 4px 0px 0px $resetkeyshadow2;
+        }
+        &__reset {
+          background-color: $resetkeybackground2;
+          -webkit-box-shadow: 0px 4px 0px 0px $resetkeyshadow2;
+          -moz-box-shadow: 0px 4px 0px 0px $resetkeyshadow2;
+          box-shadow: 0px 4px 0px 0px $resetkeyshadow2;
+        }
+        &__equal {
+          background-color: $equalkeybackground2;
+          -webkit-box-shadow: 0px 4px 0px 0px $equalkeyshadow2;
+          -moz-box-shadow: 0px 4px 0px 0px $equalkeyshadow2;
+          box-shadow: 0px 4px 0px 0px $equalkeyshadow2;
+        }
+      }
+    }
+  }
+}
+
+@mixin third {
+  body.third {
+    transition: 0.3s linear;
+    background-color: $background3;
+    .calculator-wrapper {
+      .header {
+        &__logo {
+          color: $text3;
+        }
+        &__title {
+          color: $text3;
+        }
+        &__theme-numbers {
+          color: $text3;
+        }
+      }
+      .theme-toggle {
+        background-color: $keypad3;
+      }
+      .custom-radio-button {
+        .checkmark {
+          background-color: $equalkeybackground3;
+        }
+      }
+      .screen {
+        background-color: $screen3;
+        &__result {
+          color: $text3;
+        }
+        &__previous {
+          color: lighten($text3, 35%);
+        }
+        &__sign {
+          color: lighten($text3, 35%);
+        }
+      }
+      .buttons {
+        background-color: $keypad3;
+        &__number {
+          background-color: $keybackground3;
+          color: $text3;
+          -webkit-box-shadow: 0px 4px 0px 0px $keyshadow3;
+          -moz-box-shadow: 0px 4px 0px 0px $keyshadow3;
+          box-shadow: 0px 4px 0px 0px $keyshadow3;
+        }
+        &__operator {
+          background-color: $keybackground3;
+          color: $text3;
+          -webkit-box-shadow: 0px 4px 0px 0px $keyshadow3;
+          -moz-box-shadow: 0px 4px 0px 0px $keyshadow3;
+          box-shadow: 0px 4px 0px 0px $keyshadow3;
+        }
+        &__del {
+          background-color: $resetkeybackground3;
+          -webkit-box-shadow: 0px 4px 0px 0px $resetkeyshadow3;
+          -moz-box-shadow: 0px 4px 0px 0px $resetkeyshadow3;
+          box-shadow: 0px 4px 0px 0px $resetkeyshadow3;
+        }
+        &__reset {
+          background-color: $resetkeybackground3;
+          -webkit-box-shadow: 0px 4px 0px 0px $resetkeyshadow3;
+          -moz-box-shadow: 0px 4px 0px 0px $resetkeyshadow3;
+          box-shadow: 0px 4px 0px 0px $resetkeyshadow3;
+        }
+        &__equal {
+          background-color: $equalkeybackground3;
+          -webkit-box-shadow: 0px 4px 0px 0px $equalkeyshadow3;
+          -moz-box-shadow: 0px 4px 0px 0px $equalkeyshadow3;
+          box-shadow: 0px 4px 0px 0px $equalkeyshadow3;
+        }
+      }
+    }
+  }
+}

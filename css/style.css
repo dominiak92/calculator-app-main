@@ -1,0 +1,355 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "League Spartan", sans-serif;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(222deg, 26%, 31%);
+  transition: 0.2s linear;
+}
+
+.calculator-wrapper {
+  width: 320px;
+  height: 606px;
+  margin-top: 30px;
+  transition: 0.2s linear;
+}
+
+body.first {
+  transition: 0.3s linear;
+  background-color: hsl(0deg, 0%, 90%);
+}
+body.first .calculator-wrapper .header__logo {
+  color: hsl(60deg, 10%, 19%);
+}
+body.first .calculator-wrapper .header__title {
+  color: hsl(60deg, 10%, 19%);
+}
+body.first .calculator-wrapper .header__theme-numbers {
+  color: hsl(60deg, 10%, 19%);
+}
+body.first .calculator-wrapper .theme-toggle {
+  background-color: hsl(0deg, 5%, 81%);
+}
+body.first .calculator-wrapper .custom-radio-button .checkmark {
+  background-color: hsl(25deg, 98%, 40%);
+}
+body.first .calculator-wrapper .screen {
+  background-color: hsl(0deg, 0%, 93%);
+}
+body.first .calculator-wrapper .screen__result {
+  color: hsl(60deg, 10%, 19%);
+}
+body.first .calculator-wrapper .screen__previous {
+  color: #95957e;
+}
+body.first .calculator-wrapper .screen__sign {
+  color: #95957e;
+}
+body.first .calculator-wrapper .buttons {
+  background-color: hsl(0deg, 5%, 81%);
+}
+body.first .calculator-wrapper .buttons__number {
+  color: hsl(60deg, 10%, 19%);
+  box-shadow: 0px 4px 0px 0px hsl(35deg, 11%, 61%);
+}
+body.first .calculator-wrapper .buttons__operator {
+  color: hsl(60deg, 10%, 19%);
+  box-shadow: 0px 4px 0px 0px hsl(35deg, 11%, 61%);
+}
+body.first .calculator-wrapper .buttons__del {
+  background-color: hsl(185deg, 42%, 37%);
+  box-shadow: 0px 4px 0px 0px hsl(185deg, 58%, 25%);
+}
+body.first .calculator-wrapper .buttons__reset {
+  background-color: hsl(185deg, 42%, 37%);
+  box-shadow: 0px 4px 0px 0px hsl(185deg, 58%, 25%);
+}
+body.first .calculator-wrapper .buttons__equal {
+  background-color: hsl(25deg, 98%, 40%);
+  box-shadow: 0px 4px 0px 0px hsl(25deg, 99%, 27%);
+}
+
+body.third {
+  transition: 0.3s linear;
+  background-color: hsl(268deg, 75%, 9%);
+}
+body.third .calculator-wrapper .header__logo {
+  color: hsl(52deg, 100%, 62%);
+}
+body.third .calculator-wrapper .header__title {
+  color: hsl(52deg, 100%, 62%);
+}
+body.third .calculator-wrapper .header__theme-numbers {
+  color: hsl(52deg, 100%, 62%);
+}
+body.third .calculator-wrapper .theme-toggle {
+  background-color: hsl(268deg, 71%, 12%);
+}
+body.third .calculator-wrapper .custom-radio-button .checkmark {
+  background-color: hsl(176deg, 100%, 44%);
+}
+body.third .calculator-wrapper .screen {
+  background-color: hsl(268deg, 71%, 12%);
+}
+body.third .calculator-wrapper .screen__result {
+  color: hsl(52deg, 100%, 62%);
+}
+body.third .calculator-wrapper .screen__previous {
+  color: #fffdf0;
+}
+body.third .calculator-wrapper .screen__sign {
+  color: #fffdf0;
+}
+body.third .calculator-wrapper .buttons {
+  background-color: hsl(268deg, 71%, 12%);
+}
+body.third .calculator-wrapper .buttons__number {
+  background-color: hsl(268deg, 47%, 21%);
+  color: hsl(52deg, 100%, 62%);
+  box-shadow: 0px 4px 0px 0px hsl(290deg, 70%, 36%);
+}
+body.third .calculator-wrapper .buttons__operator {
+  background-color: hsl(268deg, 47%, 21%);
+  color: hsl(52deg, 100%, 62%);
+  box-shadow: 0px 4px 0px 0px hsl(290deg, 70%, 36%);
+}
+body.third .calculator-wrapper .buttons__del {
+  background-color: hsl(281deg, 89%, 26%);
+  box-shadow: 0px 4px 0px 0px hsl(285deg, 91%, 52%);
+}
+body.third .calculator-wrapper .buttons__reset {
+  background-color: hsl(281deg, 89%, 26%);
+  box-shadow: 0px 4px 0px 0px hsl(285deg, 91%, 52%);
+}
+body.third .calculator-wrapper .buttons__equal {
+  background-color: hsl(176deg, 100%, 44%);
+  box-shadow: 0px 4px 0px 0px hsl(177deg, 92%, 70%);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+  height: 42px;
+}
+.header__logo {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 32px;
+  letter-spacing: -0.53px;
+  margin: 0;
+}
+.header__themechanger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 139px;
+  height: 32px;
+}
+.header__title {
+  font-size: 12px;
+  color: hsl(0deg, 0%, 100%);
+  letter-spacing: 1px;
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin: 0;
+  margin-left: 20px;
+}
+.header__theme-numbers {
+  text-align: end;
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 10px;
+  width: 60px;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.toggle-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.theme-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #242D44;
+  border-radius: 10px;
+  height: 20px;
+}
+
+.custom-radio-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-radio-button input {
+  display: none;
+}
+.custom-radio-button input:checked + .checkmark {
+  opacity: 1;
+  display: inline-block;
+}
+.custom-radio-button .checkmark {
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  background-color: hsl(6deg, 63%, 50%);
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.screen {
+  width: 327px;
+  height: 88px;
+  margin-top: 32px;
+  border-radius: 10px;
+  background-color: hsl(224deg, 36%, 15%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.screen__result {
+  text-align: end;
+  margin-right: 24px;
+  font-size: 40px;
+  margin-top: 0;
+  color: hsl(0deg, 0%, 100%);
+  overflow-wrap: break-word;
+}
+.screen__previous {
+  flex-grow: 1;
+  text-align: end;
+  margin-bottom: 0px;
+  margin-right: 24px;
+  margin-top: 8px;
+  color: #a6a6a6;
+}
+.screen__sign {
+  margin: 0;
+  color: #a6a6a6;
+  margin-right: 24px;
+  text-align: end;
+}
+
+.result-wrapper {
+  height: 88px;
+  width: 327px;
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  width: 300px;
+  transition: 0.3s ease-in;
+}
+
+.buttons {
+  box-sizing: border-box;
+  width: 327px;
+  height: 420px;
+  background-color: hsl(223deg, 31%, 20%);
+  border-radius: 10px;
+  margin-top: 24px;
+  padding: 24px;
+  display: flex;
+}
+.buttons__number {
+  transition: 0.2s linear;
+  border: none;
+  border-radius: 5px;
+  height: 60px;
+  width: 60px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 32px;
+  color: hsl(221deg, 14%, 31%);
+  background-color: hsl(30deg, 25%, 89%);
+  line-height: 64px;
+  cursor: pointer;
+  box-shadow: 0px 4px 0px 0px hsl(28deg, 16%, 65%);
+}
+.buttons__operator {
+  transition: 0.2s linear;
+  border: none;
+  border-radius: 5px;
+  height: 60px;
+  width: 60px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 32px;
+  color: hsl(221deg, 14%, 31%);
+  background-color: hsl(30deg, 25%, 89%);
+  line-height: 64px;
+  cursor: pointer;
+  box-shadow: 0px 4px 0px 0px hsl(28deg, 16%, 65%);
+}
+.buttons__del {
+  transition: 0.2s linear;
+  border: none;
+  border-radius: 5px;
+  height: 60px;
+  width: 60px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 32px;
+  color: hsl(221deg, 14%, 31%);
+  background-color: hsl(30deg, 25%, 89%);
+  line-height: 64px;
+  cursor: pointer;
+  box-shadow: 0px 4px 0px 0px hsl(28deg, 16%, 65%);
+  background-color: hsl(225deg, 21%, 49%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 20px;
+  letter-spacing: -0.33px;
+  box-shadow: 0px 4px 0px 0px hsl(224deg, 28%, 35%);
+}
+.buttons__reset {
+  transition: 0.2s linear;
+  border: none;
+  border-radius: 5px;
+  height: 60px;
+  width: 60px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 32px;
+  color: hsl(221deg, 14%, 31%);
+  background-color: hsl(30deg, 25%, 89%);
+  line-height: 64px;
+  cursor: pointer;
+  box-shadow: 0px 4px 0px 0px hsl(28deg, 16%, 65%);
+  background-color: hsl(225deg, 21%, 49%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 20px;
+  letter-spacing: -0.33px;
+  box-shadow: 0px 4px 0px 0px hsl(224deg, 28%, 35%);
+  width: 133px;
+  height: 64px;
+}
+.buttons__equal {
+  transition: 0.2s linear;
+  border: none;
+  border-radius: 5px;
+  height: 60px;
+  width: 60px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 32px;
+  color: hsl(221deg, 14%, 31%);
+  background-color: hsl(30deg, 25%, 89%);
+  line-height: 64px;
+  cursor: pointer;
+  box-shadow: 0px 4px 0px 0px hsl(28deg, 16%, 65%);
+  background-color: hsl(225deg, 21%, 49%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 20px;
+  letter-spacing: -0.33px;
+  box-shadow: 0px 4px 0px 0px hsl(224deg, 28%, 35%);
+  width: 133px;
+  height: 64px;
+  background-color: hsl(6deg, 63%, 50%);
+  box-shadow: 0px 4px 0px 0px hsl(6deg, 70%, 34%);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,117 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+  height: 42px;
+  &__logo {
+    color: $white1;
+    font-size: 32px;
+    letter-spacing: -0.53px;
+    margin: 0;
+  }
+  &__themechanger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 139px;
+    height: 32px;
+  }
+  &__title {
+    font-size: 12px;
+    color: $white1;
+    letter-spacing: 1px;
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin: 0;
+    margin-left: 20px;
+  }
+  &__theme-numbers {
+    text-align: end;
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 10px;
+    width: 60px;
+    color: $white1;
+  }
+}
+.toggle-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.theme-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #242D44;
+  border-radius: 10px;
+  height: 20px;
+}
+.custom-radio-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input {
+    display: none;
+    &:checked {
+      + {
+        .checkmark {
+          opacity: 1;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .checkmark {
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    background-color: hsl(6, 63%, 50%);
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+}
+
+.screen {
+  width: 327px;
+  height: 88px;
+  margin-top: 32px;
+  border-radius: 10px;
+  background-color: $screen1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  &__result {
+    text-align: end;
+    margin-right: 24px;
+    font-size: 40px;
+    margin-top: 0;
+    color: $white1;
+    overflow-wrap: break-word;
+  }
+  &__previous {
+    flex-grow: 1;
+    text-align: end;
+    margin-bottom: 0px;
+    margin-right: 24px;
+    margin-top: 8px;
+    color: darken($white1, 35%);
+  }
+  &__sign {
+    margin: 0;
+    color: darken($white1, 35%);
+    margin-right: 24px;
+    text-align: end;
+  }
+}
+
+.result-wrapper {
+  height: 88px;
+  width: 327px;
+}
