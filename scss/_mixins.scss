@@ -27,7 +27,7 @@
 }
 
 @mixin button {
-  transition: 0.2s linear;
+  transition: 0.1s linear;
   border: none;
   border-radius: 5px;
   height: 60px;
@@ -41,6 +41,16 @@
   -webkit-box-shadow: 0px 4px 0px 0px $keyshadow1;
   -moz-box-shadow: 0px 4px 0px 0px $keyshadow1;
   box-shadow: 0px 4px 0px 0px $keyshadow1;
+  @include xl {
+    width: 101px;
+    height: 64px;
+    font-size: 40px;
+    border-radius: 10px;
+    &:hover {
+      background-color: #FFFFFE;
+    }
+  
+  }
 }
 
 @mixin delbutton {
@@ -51,6 +61,12 @@
   -webkit-box-shadow: 0px 4px 0px 0px $resetkeyshadow1;
   -moz-box-shadow: 0px 4px 0px 0px $resetkeyshadow1;
   box-shadow: 0px 4px 0px 0px $resetkeyshadow1;
+  @include xl {
+    font-size: 28px;
+    &:hover {
+      background-color: #A2B2E1;
+    }
+  }
 }
 
 @mixin triswitch {

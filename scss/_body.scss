@@ -8,10 +8,16 @@ body {
   transition: 0.2s linear;
 }
 .calculator-wrapper {
+  justify-self: center;
+  align-self: center;
   width: 320px;
   height: 606px;
   margin-top: 30px;
   transition: 0.2s linear;
+  @include xl {
+    width: 540px;
+    height: 706px;
+  }
 }
 @include second;
 @include third;

@@ -53,18 +53,33 @@
           -webkit-box-shadow: 0px 4px 0px 0px $resetkeyshadow2;
           -moz-box-shadow: 0px 4px 0px 0px $resetkeyshadow2;
           box-shadow: 0px 4px 0px 0px $resetkeyshadow2;
+          @include xl {
+            &:hover {
+              background-color: #62B5BC;
+            }
+          }
         }
         &__reset {
           background-color: $resetkeybackground2;
           -webkit-box-shadow: 0px 4px 0px 0px $resetkeyshadow2;
           -moz-box-shadow: 0px 4px 0px 0px $resetkeyshadow2;
           box-shadow: 0px 4px 0px 0px $resetkeyshadow2;
+          @include xl {
+            &:hover {
+              background-color: #62B5BC;
+            }
+          }
         }
         &__equal {
           background-color: $equalkeybackground2;
           -webkit-box-shadow: 0px 4px 0px 0px $equalkeyshadow2;
           -moz-box-shadow: 0px 4px 0px 0px $equalkeyshadow2;
           box-shadow: 0px 4px 0px 0px $equalkeyshadow2;
+          @include xl {
+            &:hover {
+              background-color: #FF8A38;
+            }
+          }
         }
       }
     }
@@ -115,6 +130,11 @@
           -webkit-box-shadow: 0px 4px 0px 0px $keyshadow3;
           -moz-box-shadow: 0px 4px 0px 0px $keyshadow3;
           box-shadow: 0px 4px 0px 0px $keyshadow3;
+          @include xl {
+            &:hover {
+              background-color: #8631AF;
+            }
+          }
         }
         &__operator {
           background-color: $keybackground3;
@@ -122,24 +142,45 @@
           -webkit-box-shadow: 0px 4px 0px 0px $keyshadow3;
           -moz-box-shadow: 0px 4px 0px 0px $keyshadow3;
           box-shadow: 0px 4px 0px 0px $keyshadow3;
+          @include xl {
+            &:hover {
+              background-color: #8631AF;
+            }
+          }
+          
         }
         &__del {
           background-color: $resetkeybackground3;
           -webkit-box-shadow: 0px 4px 0px 0px $resetkeyshadow3;
           -moz-box-shadow: 0px 4px 0px 0px $resetkeyshadow3;
           box-shadow: 0px 4px 0px 0px $resetkeyshadow3;
+          @include xl {
+            &:hover {
+                background-color: #8631AF;
+            }
+          }
         }
         &__reset {
           background-color: $resetkeybackground3;
           -webkit-box-shadow: 0px 4px 0px 0px $resetkeyshadow3;
           -moz-box-shadow: 0px 4px 0px 0px $resetkeyshadow3;
           box-shadow: 0px 4px 0px 0px $resetkeyshadow3;
+          @include xl {
+            &:hover {
+              background-color: #8631AF;
+            }
+          }
         }
         &__equal {
           background-color: $equalkeybackground3;
           -webkit-box-shadow: 0px 4px 0px 0px $equalkeyshadow3;
           -moz-box-shadow: 0px 4px 0px 0px $equalkeyshadow3;
           box-shadow: 0px 4px 0px 0px $equalkeyshadow3;
+          @include xl {
+            &:hover {
+              background-color: #93FFF8;
+            }
+          }
         }
       }
     }

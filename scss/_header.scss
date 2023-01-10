@@ -4,6 +4,10 @@
   justify-content: space-between;
   width: 320px;
   height: 42px;
+  @include xl {
+    width: 533px;
+    height: 42px;
+  }
   &__logo {
     color: $white1;
     font-size: 32px;
@@ -87,6 +91,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  @include xl{
+    width: 540px;
+    height: 128px;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
   &__result {
     text-align: end;
     margin-right: 24px;
@@ -94,6 +104,11 @@
     margin-top: 0;
     color: $white1;
     overflow-wrap: break-word;
+    @include xl {
+        font-weight: 56px;
+        width: 100%;
+        margin-top: 20px;
+    }
   }
   &__previous {
     flex-grow: 1;
@@ -102,16 +117,29 @@
     margin-right: 24px;
     margin-top: 8px;
     color: darken($white1, 35%);
+    @include xl{
+        margin-right: 0;
+        font-size: 20px;
+    }
   }
   &__sign {
     margin: 0;
     color: darken($white1, 35%);
     margin-right: 24px;
     text-align: end;
+    @include xl{
+        margin-right: 0;
+        font-size: 20px;
+    }
   }
 }
 
 .result-wrapper {
   height: 88px;
   width: 327px;
+  @include xl {
+    width: 510px;
+    height: 128px;
+    margin-right: 20px;
+  }
 }
