@@ -17,7 +17,7 @@ The designs were created to the following widths:
 - Very dark desaturated blue (toggle background, keypad background): hsl(223, 31%, 20%)
 - Very dark desaturated blue (screen background): hsl(224, 36%, 15%)
 
-#### Keys
+#### Keyss
 
 - Desaturated dark blue (key background): hsl(225, 21%, 49%)
 - Desaturated dark blue (key shadow): hsl(224, 28%, 35%)
